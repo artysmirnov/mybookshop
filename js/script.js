@@ -85,14 +85,25 @@ console.log(GOODS);
 class Products {
 
     render() {
+        const productsStore = localStorageUtil.getProducts();
         let htmlCatalog = '';
         GOODS.forEach(({id, name, price, img}) => {
+            let activeClass = '';
+            let activeText = '';
+
+            if (productsStore.indexOf(id) === -1) {
+                activeText = 'Добавить в корзину';
+            }
+            else{
+                activeText = 'Удалить из корзины';
+            }
+
             htmlCatalog += `
             <li class="products-element">
             <img src="${img}" alt="${name}" class="products-element__img">
             <div class="buy_block">
                 <span class="products-element__price">${price}</span>
-                <button class="products-element__btn" data-id="${id}">Купить</button>
+                <button class="products-element__btn" data-id="${id}">${activeText}</button>
             </div>
             <span class="products-element__name">${name}</span>
             </li>

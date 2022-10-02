@@ -163,10 +163,8 @@ footer {
 main {
     margin-left: 120px;
     margin-right: 120px;
-    padding-left: 20px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column;
 }
 
 .navigation {
@@ -189,7 +187,6 @@ li > a {
     flex-flow: row;
     justify-content: space-between;
     align-items:flex-start;
-    gap: 50px;
 }
 
 .products-container {

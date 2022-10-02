@@ -8,29 +8,34 @@
 
 .head_elements {
     margin-left: 120px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
+    margin-right: 120px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+
+    gap:50px;
 }
 
 .logo {
-    min-width: 40px;
-    max-width: 150px;
+    min-width: 20px;
+    max-width: 100px;
 }
 
 .searchbar {
-    min-width: 550px;
+    flex-grow: 1;
+    min-width: 100px;
+    max-width: 1000px;
     height: 50px;
 }
 
 .cart_svg {
-    min-width: 40px;
-    max-width: 150px;
+    min-width: 20px;
+    max-width: 100px;
 }
 
 .user_svg {
-    min-width: 40px;
-    max-width: 150px;
+    min-width: 20px;
+    max-width: 100px;
 }
 
 /* Выпадающий список каталога */
@@ -75,10 +80,6 @@
     display: block;
 }
 
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {
-    background-color: #ddd;
-}
 
 .top {
     margin-left: 120px;
@@ -86,6 +87,7 @@
     display: flex;
     flex-flow: column wrap;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .menu {
@@ -94,13 +96,21 @@
     align-items: center;
 }
 
+
 .different_links {
     display: block;
     outline: none;
 }
+.different_links > a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
 
 
 .page_name {
+    font-size: 30px;
+    margin-left: 120px;
     padding-left: 20px;
 }
 
@@ -126,6 +136,7 @@ footer {
 .info > a {
     text-decoration: none;
     color: black;
+    margin-bottom: 25px;
 }
 
 .social_svg {

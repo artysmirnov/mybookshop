@@ -1,6 +1,4 @@
 'use strict';
-const ROOT_SHOPPING = document.getElementById('shopping');
-const ROOT_HEADER = document.getElementById('header');
 const GOODS = [
     {
         id: 1,
@@ -78,14 +76,6 @@ const GOODS = [
     },
 
 ];
-
-
-class Products {
-
-    render() {
-        ROOT_PRODUCTS.innerHTML = html;
-    }
-}
 
 const currentPage = 1;
 const rows = 6;

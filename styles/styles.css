@@ -350,7 +350,7 @@ li > a {
     .products-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
         width: 80%;
-        max-width: 500px;
+        max-width: 450px;
     }
 
     .products-element__img {
@@ -373,6 +373,7 @@ li > a {
     .head_elements{
         margin: 0px 0px 0px 0px;
         gap: 0px;
+        justify-content: center;
     }
     .products-element__img {
         width: 100%;

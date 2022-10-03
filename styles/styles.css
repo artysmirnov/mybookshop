@@ -2,6 +2,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+head {
+    background: #D2C790;
+}
+
 .my_header {
     background: #D2C790;
 }
@@ -187,7 +198,7 @@ li > a {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 .products-container {
@@ -201,6 +212,7 @@ li > a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
     padding: 25px;
     max-width: 300px;
 }
@@ -230,18 +242,19 @@ li > a {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
-    align-items: center;
 }
-.pagination > li{
+
+.pagination > li {
     display: inline-block;
     margin: 0 5px;
 }
-.pagination-item{
+
+.pagination-item {
     cursor: pointer;
     padding: 5px 10px;
 }
-.pagination-list{
+
+.pagination-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,22 +263,24 @@ li > a {
     list-style-type: none;
     font-size: 30px;
 }
-.pagination-active-item{
+
+.pagination-active-item {
     color: #BDBDBD;
 }
 
-.registration-objects{
+.registration-objects {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
 
-.btn-reg{
+.btn-reg {
     margin: 25px;
     width: 200px;
     height: 50px;
 }
+
 .back_to_top {
     position: fixed;
     bottom: 80px;
@@ -288,4 +303,51 @@ li > a {
 
 .back_to_top-show {
     display: block;
+}
+
+@media (max-width: 1200px) {
+    .top {
+        display: none;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .payment {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .footer_items {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .products-element__img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
 }

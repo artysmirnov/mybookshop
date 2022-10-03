@@ -9,9 +9,9 @@
 <header>
     <div class="my_header">
         <div class="head_elements">
-            <a href=""><img class="logo" src="images/logo.svg" alt="logo"></a>
+            <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
             <input class="searchbar" type="text" placeholder="Поиск">
-            <a href=""><img class="user_svg" src="images/user.svg" alt="user"></a>
+            <a href="html/registration.html"><img class="user_svg" src="images/user.svg" alt="user"></a>
             <a href=""><img class="cart_svg" src="images/cart.svg" alt="cart"></a>
         </div>
     </div>
@@ -57,7 +57,11 @@
                 </li>
             </ul>
         </nav>
-        <div id="products"></div>
+        <div class="paginatedItems">
+            <div id="products"></div>
+            <div class="pagination"></div>
+        </div>
+
     </div>
 </main>
 <footer>
@@ -86,7 +90,7 @@
 
     </div>
 </footer>
+
 </body>
-</html>
 <script src="js/script.js"></script>
-<script src="utils/localStorageUtils.js"></script>
+</html>

@@ -119,6 +119,7 @@ footer {
 }
 
 .footer_items {
+    posotion: absolute;
     margin: 0px 120px;
     display: flex;
     flex-flow: row wrap;
@@ -231,4 +232,31 @@ li > a {
     justify-content: space-between;
     align-items: center;
     align-items: center;
+}
+.pagination > li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.pagination-item{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.pagination-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    padding: 8px;
+    list-style-type: none;
+    font-size: 30px;
+}
+.pagination-active-item{
+    color: #BDBDBD;
+}
+
+.registration-objects{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
 }

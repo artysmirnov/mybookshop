@@ -73,7 +73,8 @@ const GOODS = [
         name: "SQL ЗА 10 МИНУТ",
         price: 10000,
         img: 'https://ndc.book24.ru/resize/820x1180/iblock/9d6/9d6ea3a9f541ac1752afb670adc05767/d2a8ae0c340b3fde5d7347548f60eed6.jpg',
-    },
+    }
+
 
 ];
 
@@ -130,7 +131,7 @@ function displayBtn(page) {
     liEl.addEventListener('click', () => {
         displayList(GOODS, rows, page);
 
-        let currentItemLi=document.querySelector('.pagination-active-item');
+        let currentItemLi = document.querySelector('.pagination-active-item');
         currentItemLi.classList.remove('pagination-active-item');
         liEl.classList.add('pagination-active-item');
     });

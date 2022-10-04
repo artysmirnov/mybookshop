@@ -2,13 +2,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-}
-
 head {
     background: #D2C790;
 }
@@ -18,8 +11,6 @@ head {
 }
 
 .head_elements {
-    margin-left: 120px;
-    margin-right: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,9 +24,8 @@ head {
 
 .searchbar {
     flex-grow: 1;
-    min-width: 100px;
-    max-width: 1000px;
     height: 50px;
+    max-width: 1000px;
 }
 
 .cart_svg {
@@ -92,8 +82,6 @@ head {
 
 
 .top {
-    margin-left: 120px;
-    margin-right: 120px;
     display: flex;
     flex-flow: column wrap;
     font-size: 30px;
@@ -101,12 +89,7 @@ head {
     justify-content: flex-start;
 }
 
-.menu {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: flex-start;
-}
+
 
 
 .different_links {
@@ -123,8 +106,6 @@ head {
 
 .page_name {
     font-size: 30px;
-    display: flex;
-    align-items: flex-start;
 }
 
 footer {
@@ -133,11 +114,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex:0 0 auto;
 }
 
 .footer_items {
-    posotion: absolute;
-    margin: 0px 120px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -148,7 +131,7 @@ footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .info > a {
@@ -178,14 +161,26 @@ footer {
     flex-flow: column wrap;
     align-items: center;
 }
-
-main {
-    margin-left: 120px;
-    margin-right: 120px;
+.menu{
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
 }
+
+.main-items{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+
+}
+.middle{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 .navigation {
     list-style-type: none;
@@ -201,29 +196,31 @@ li > a {
     text-decoration: none;
     color: black;
 }
-
-.middle {
+nav{
     display: flex;
-    flex-flow: row;
+    flex-flow: column wrap;
+    align-items: center;
     justify-content: center;
+    font-size: 30px;
 }
+
+
 
 .products-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 80%;
-    max-width: 1200px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
-.paginatedItems{
-    max-width:1000px;
-}
+
+
+
+
 .products-element {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 25px;
-    max-width: 300px;
 }
 
 .products-element__name {
@@ -231,30 +228,25 @@ li > a {
 }
 
 .products-element__img {
-    width: 100%;
-    height: 450px;
+    width: 80%;
+    height: 100%;
     object-fit: contain;
 }
 
 .products-element__price {
 
 }
-.paginatedItems{
 
-}
+
+
 
 .products-element__button {
-    grid-gap: 45px;
-    width: 80%;
-    max-width: 1200px;
-    margin: 25px;
+
+}
+.paginatedItems{
+    position: relative;
 }
 
-.buy_block {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
 
 .pagination > li {
     display: inline-block;
@@ -318,18 +310,12 @@ li > a {
 }
 
 @media (max-width: 1300px) {
-    .middle {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: flex-start;
-    }
     .top {
         display: none;
     }
 
     .logo {
-        max-width: 20px;
+        max-width: 50px;
     }
 
     .payment {
@@ -357,28 +343,9 @@ li > a {
         display: none;
     }
 
-    .products-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-        width: 80%;
-        max-width: 500px;
-    }
-    middle{
-        margin:0px;
-        padding: 0px;
-    }
-    body{
-        margin:0px 0px;
-        padding: 0px 0px;
-    }
-
-    .products-element__img {
-        width: 100%;
-        height: 200px;
-        object-fit: contain;
-    }
     .searchbar {
         max-width: 400px;
-        max-height: 20px;
+        height: 20px;
     }
 
     .cart_svg {
@@ -388,15 +355,10 @@ li > a {
     .user_svg {
         max-width: 20px;
     }
-    .head_elements{
-        margin: 0px 0px 0px 0px;
-        gap: 0px;
-        justify-content: center;
-    }
-    .products-element__img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: contain;
-    }
 
+    .products-container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

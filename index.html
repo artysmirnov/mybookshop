@@ -4,67 +4,72 @@
     <meta charset="UTF-8">
     <title>Bookshop</title>
     <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
+    <link type="image/x-icon" href="/images/favicon.svg" rel="shortcut icon">
+    <link type="Image/x-icon" href="/images/favicon.svg" rel="icon">
+
 </head>
 <body>
-<header>
-    <div class="my_header">
-        <div class="head_elements">
-            <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
-            <input class="searchbar" type="text" placeholder="Поиск">
-            <a href="html/registration.html"><img class="user_svg" src="images/user.svg" alt="user"></a>
-            <a href=""><img class="cart_svg" src="images/cart.svg" alt="cart"></a>
+<div class="content">
+    <header>
+        <div class="my_header">
+            <div class="head_elements">
+                <a href="../index.html"><img class="logo" src="../images/logo.svg" alt="logo"></a>
+                <input class="searchbar" type="text" placeholder="Поиск">
+                <a href="registration.html"><img class="user_svg" src="../images/user.svg" alt="user"></a>
+                <a href=""><img class="cart_svg" src="../images/cart.svg" alt="cart"></a>
+            </div>
         </div>
-    </div>
-    <div class="top">
-        <div class="menu">
-            <div class="dropdown">
-                <button class="dropbtn">Каталог</button>
-                <div class="dropdown-content">
-                    <a href="#">Новинки литературы</a>
-                    <a href="#">Скоро в продаже</a>
-                    <a href="#">Лучшие из лучших</a>
+        <div class="top">
+            <div class="menu">
+                <div class="dropdown">
+                    <button class="dropbtn">Каталог</button>
+                    <div class="dropdown-content">
+                        <a href="#">Новинки литературы</a>
+                        <a href="#">Скоро в продаже</a>
+                        <a href="#">Лучшие из лучших</a>
+                    </div>
+                </div>
+                <div class="different_links">
+                    <a href="">Бестселлеры</a>
+                    <a href="">Новинки</a>
+                    <a href="">Книги</a>
+                    <a href="">Канцтовары</a>
                 </div>
             </div>
-            <div class="different_links">
-                <a href="">Бестселлеры</a>
-                <a href="">Новинки</a>
-                <a href="">Книги</a>
-                <a href="">Канцтовары</a>
+        </div>
+    </header>
+    <div class="main-items">
+        <div class="page_name">Книги</div>
+        <div class="middle">
+            <div class="nav">
+                <h2>Категории</h2>
+                <ul class="navigation">
+                    <li>
+                        <a href="">Художественная литература</a>
+                    </li>
+                    <li>
+                        <a href="">Для детей</a>
+                    </li>
+                    <li>
+                        <a href="">Образование</a>
+                    </li>
+                    <li>
+                        <a href="">Наука и техника</a>
+                    </li>
+                    <li>
+                        <a href="">Искусство</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
-</header>
-<main>
-    <div class="page_name">Книги</div>
-    <div class="middle">
-        <nav>
-            <h2>Категории</h2>
-            <ul class="navigation">
-                <li>
-                    <a href="">Художественная литература</a>
-                </li>
-                <li>
-                    <a href="">Для детей</a>
-                </li>
-                <li>
-                    <a href="">Образование</a>
-                </li>
-                <li>
-                    <a href="">Наука и техника</a>
-                </li>
-                <li>
-                    <a href="">Искусство</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="paginatedItems">
-            <div id="products"></div>
-            <div class="pagination"></div>
-        </div>
+            <div class="paginatedItems">
+                <div id="products"></div>
+                <div class="pagination"></div>
+            </div>
 
+        </div>
     </div>
     <a class="back_to_top" title="Наверх">↑</a>
-</main>
+</div>
 <footer>
     <div class="footer_items">
         <div class="info">
@@ -73,15 +78,15 @@
         </div>
         <div class="social">
             <p>Соцсети</p>
-            <a href=""><img class="social_svg" src="images/youtube.svg" alt="youtube"></a>
-            <a href=""><img class="social_svg" src="images/vk.svg" alt="vk"></a>
-            <a href=""><img class="social_svg" src="images/telegram.svg" alt="telegram"></a>
+            <a href=""><img class="social_svg" src="../images/youtube.svg" alt="youtube"></a>
+            <a href=""><img class="social_svg" src="../images/vk.svg" alt="vk"></a>
+            <a href=""><img class="social_svg" src="../images/telegram.svg" alt="telegram"></a>
 
         </div>
         <div class="payment">
             <p>Оплата</p>
-            <a href=""><img class="payment_svg" src="images/visa.svg" alt="visa"></a>
-            <a href=""><img class="payment_svg" src="images/mir.svg" alt="mir"></a>
+            <a href=""><img class="payment_svg" src="../images/visa.svg" alt="visa"></a>
+            <a href=""><img class="payment_svg" src="../images/mir.svg" alt="mir"></a>
         </div>
         <div class="contacts">
             <p>Контактная информация</p>

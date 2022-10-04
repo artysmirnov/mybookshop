@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="205mm"
+   height="100mm"
+   viewBox="0 0 205 100"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Logo.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#dee8d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0129245"
+     inkscape:cx="417.60269"
+     inkscape:cy="234.96322"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs2">
+    <rect
+       x="156.3709"
+       y="349.04218"
+       width="397.55554"
+       height="80.909386"
+       id="rect119" />
+    <rect
+       x="104.71266"
+       y="383.94641"
+       width="653.40698"
+       height="302.96863"
+       id="rect113" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="Layer 3">
+      <rect
+         style="fill:#ffffff;stroke-width:0.264583"
+         id="rect1235"
+         width="277.66336"
+         height="119.63297"
+         x="-37.352654"
+         y="-6.7913909"
+         ry="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.38246518,0,0,0.91127175,-55.247389,-306.10241)"
+       id="text117"
+       style="white-space:pre;shape-inside:url(#rect119);display:inline;fill:#800000"><tspan
+         x="156.37109"
+         y="409.0933"
+         id="tspan1257"><tspan
+           style="font-weight:bold;font-size:66.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';fill:#d3bc5f"
+           id="tspan1255">BOOKSHOP</tspan></tspan></text>
+    <rect
+       style="fill:#d3bc5f;stroke-width:0.260295"
+       id="rect655"
+       width="12.537952"
+       height="45"
+       x="187.02446"
+       y="22.464001" />
+    <rect
+       style="fill:#00ff00;stroke-width:0.260295"
+       id="rect655-4"
+       width="12.537952"
+       height="45"
+       x="171.09082"
+       y="22.463835" />
+    <rect
+       style="fill:#d38d5f;stroke-width:0.260295"
+       id="rect655-4-7"
+       width="12.537952"
+       height="45"
+       x="155.02657"
+       y="22.464001" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#d38d5f;stroke-width:0.264583"
+       id="rect987"
+       width="218.36935"
+       height="5.4853544"
+       x="-6.0077691"
+       y="-1.3657906e-08" />
+    <rect
+       style="fill:#d38d5f;stroke-width:0.264583"
+       id="rect987-4"
+       width="218.36935"
+       height="5.4853544"
+       x="-7.0526009"
+       y="94.42646" />
+    <rect
+       style="fill:#d38d5f;stroke-width:0.264583"
+       id="rect1018"
+       width="5"
+       height="99.258797"
+       x="-1.3657906e-08"
+       y="-2.3508661" />
+    <rect
+       style="fill:#d38d5f;stroke-width:0.264583"
+       id="rect1018-0"
+       width="4.4405251"
+       height="99.258797"
+       x="200.47665"
+       y="1.5023697e-07" />
+  </g>
+</svg>

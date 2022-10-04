@@ -6,9 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 100%;
+    justify-content: center;
 }
 
 head {
@@ -23,9 +21,8 @@ head {
     margin-left: 120px;
     margin-right: 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
     gap: 50px;
 }
 
@@ -101,12 +98,14 @@ head {
     flex-flow: column wrap;
     font-size: 30px;
     text-decoration: none;
+    justify-content: flex-start;
 }
 
 .menu {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: flex-start;
 }
 
 
@@ -124,11 +123,16 @@ head {
 
 .page_name {
     font-size: 30px;
+    display: flex;
+    align-items: flex-start;
 }
 
 footer {
     background: #D9D9D9;
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer_items {
@@ -137,6 +141,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 .info {
@@ -179,6 +184,7 @@ main {
     margin-right: 120px;
     display: flex;
     flex-flow: column;
+    align-items: center;
 }
 
 .navigation {
@@ -199,17 +205,18 @@ li > a {
 .middle {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .products-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 80%;
     max-width: 1200px;
 }
-
+.paginatedItems{
+    max-width:1000px;
+}
 .products-element {
     display: flex;
     flex-direction: column;
@@ -230,6 +237,9 @@ li > a {
 }
 
 .products-element__price {
+
+}
+.paginatedItems{
 
 }
 
@@ -285,7 +295,7 @@ li > a {
 
 .back_to_top {
     position: fixed;
-    bottom: 80px;
+    bottom: 100px;
     right: 40px;
     z-index: 9999;
     width: 30px;
@@ -350,12 +360,20 @@ li > a {
     .products-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
         width: 80%;
-        max-width: 450px;
+        max-width: 500px;
+    }
+    middle{
+        margin:0px;
+        padding: 0px;
+    }
+    body{
+        margin:0px 0px;
+        padding: 0px 0px;
     }
 
     .products-element__img {
         width: 100%;
-        height: 300px;
+        height: 200px;
         object-fit: contain;
     }
     .searchbar {

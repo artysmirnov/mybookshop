@@ -251,6 +251,13 @@ nav {
 .products-element__button {
 
 }
+.buy_block{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .paginatedItems {
     position: relative;

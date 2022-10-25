@@ -324,9 +324,35 @@ nav {
 .back_to_top-show {
     display: block;
 }
+.item_page{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px;
+    gap: 25px;
+}
+
+.d-block{
+    object-fit: fill;
+    align-self: center;
+    justify-self: center;
+}
+#carouselExampleIndicators{
+    width: 500px;
+    height: 450px;
+}
 
 @media (max-width: 1300px) {
     .top {
+        display: none;
+    }
+
+    .head_elements{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .user_svg{
         display: none;
     }
 
@@ -376,5 +402,16 @@ nav {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
+    }
+    .searchbar{
+        display: none;
+    }
+    .item_page{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #carouselExampleIndicators{
+        width: 250px
     }
 }

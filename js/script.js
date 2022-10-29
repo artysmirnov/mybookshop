@@ -1,10 +1,11 @@
 'use strict';
-const GOODS = [{
-    id: 1,
-    name: "ПОНЕДЕЛЬНИК НАЧИНАЕТСЯ В СУББОТУ",
-    price: 100,
-    img: "https://cdn.book24.ru/v2/ASE000000000709823/COVER/cover13d__w410.webp",
-},
+const GOODS = [
+    {
+        id: 1,
+        name: "ПОНЕДЕЛЬНИК НАЧИНАЕТСЯ В СУББОТУ",
+        price: 100,
+        img: "https://cdn.book24.ru/v2/ASE000000000709823/COVER/cover13d__w410.webp",
+    },
 
     {
         id: 2,
@@ -91,7 +92,7 @@ function displayList(arrData, rowPerPage, page) {
             <button class="products-element__btn" data-id="${id}">Купить</button>
             
             </div>
-            <span class="products-element__name">${name}</span>
+            <a href='html/item.html' class="products-element__name" id="${id}">${name}</a>
             </div>
             `;
     });
@@ -131,6 +132,11 @@ function displayBtn(page) {
     });
     return liEl;
 }
+
+let link = document.querySelectorAll('.products-element__name');
+console.log(link);
+
+
 
 
 displayPagination(GOODS, rows);

@@ -5,10 +5,10 @@
         var scrolled = window.pageYOffset;
         var coords = document.documentElement.clientHeight;
 
-        if (scrolled > coords) {
+        if (scrolled > coords/2) {
             goTopBtn.classList.add('back_to_top-show');
         }
-        if (scrolled < coords) {
+        if (scrolled < coords/2) {
             goTopBtn.classList.remove('back_to_top-show');
         }
     }

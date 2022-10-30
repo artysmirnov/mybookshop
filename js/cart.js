@@ -90,10 +90,10 @@ console.log(cartStorage);
 
 let htmlCatalog = '';
 
+
 if (cartStorage.length) {
     cartStorage.forEach((el) => {
         const id = el;
-        const newCard = document.createElement('div');
         htmlCatalog += `
             <div class="cart-products-element">
             <img src="${GOODS[id].img}" alt="${GOODS[id].name}">
@@ -114,9 +114,19 @@ if (cartStorage.length) {
         ROOT_PRODUCTS.innerHTML = html;
 
     })
-    ROOT_PRODUCTS.innerHTML += "<div class='end_buy'><div class=\"total_price\">Итого:</div><button class=\"finally_buy\">Купить</button></div>"
-
+    ROOT_PRODUCTS.innerHTML += "<div class='end_buy'><div class=\"total_price\">Итого:</div><button class=\"finally_buy\">Купить</button></div>";
+    ROOT_PRODUCTS.innerHTML+= "<button id=\"clear\">Очистить</button>"
 } else {
     htmlCatalog += '<h1>Ваша корзина пуста</h1>'
     ROOT_PRODUCTS.innerHTML = htmlCatalog;
+}
+
+const clear = document.getElementById('clear');
+console.log(clear)
+
+if(clear){
+    clear.addEventListener('click', ()=> {
+        localStorage.clear()
+        location.reload()
+    });
 }

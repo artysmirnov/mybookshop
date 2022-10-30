@@ -90,10 +90,23 @@ console.log(cartStorage);
 
 let htmlCatalog = '';
 
+cart = {}
+
+for (element in cartStorage) {
+    console.log(element)
+    if (cartStorage[element] in cart) {
+        cart[cartStorage[element]] += 1
+    } else {
+        cart[cartStorage[element]] = 1
+    }
+}
+console.log(cart)
+
 
 if (cartStorage.length) {
-    cartStorage.forEach((el) => {
+    for (el in cart) {
         const id = el;
+        xprice = GOODS[id].price * cart[id]
         htmlCatalog += `
             <div class="cart-products-element">
             <img src="${GOODS[id].img}" alt="${GOODS[id].name}">
@@ -102,31 +115,38 @@ if (cartStorage.length) {
                 <div class="cart-products-element__price">${GOODS[id].price}</div>
             </div>
             <div class="plusminus">
-                <div class="minus"><button class="button-minus">-</button></div>
-                <div class="amount">0</div>
-                <div class="plus"><button class="button-plus">+</button></div>
+                <div class="minus"><button class="${id}" id="-">-</button></div>
+                <div class="amount">${cart[id]}</div>
+                <div class="plus"><button class="${id}" id="+">+</button></div>
             </div>
-            <div class="total">Всего 0</div>
+            <div class="total">${xprice}</div>
           
 </div>
             `;
         const html = `<div class="cart-container">${htmlCatalog}</div>`;
         ROOT_PRODUCTS.innerHTML = html;
-
+    }
+    let prices = document.querySelectorAll(".total");
+    let totalsum = 0;
+    console.log(prices)
+    prices.forEach((el) => {
+        totalsum += Number(el.innerHTML);
     })
-    ROOT_PRODUCTS.innerHTML += "<div class='end_buy'><div class=\"total_price\">Итого:</div><button class=\"finally_buy\">Купить</button></div>";
-    ROOT_PRODUCTS.innerHTML+= "<button id=\"clear\">Очистить</button>"
+    console.log(totalsum)
+    ROOT_PRODUCTS.innerHTML += `<div class='end_buy'><div class=\"total_price\">Итого: ${totalsum}</div><button class=\"finally_buy\">Купить</button></div>`;
+    ROOT_PRODUCTS.innerHTML += "<button id=\"clear\">Очистить</button>"
 } else {
     htmlCatalog += '<h1>Ваша корзина пуста</h1>'
     ROOT_PRODUCTS.innerHTML = htmlCatalog;
 }
 
 const clear = document.getElementById('clear');
-console.log(clear)
 
-if(clear){
-    clear.addEventListener('click', ()=> {
+if (clear) {
+    clear.addEventListener('click', () => {
         localStorage.clear()
         location.reload()
     });
 }
+
+

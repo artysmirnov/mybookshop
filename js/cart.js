@@ -101,7 +101,11 @@ for (element in cartStorage) {
     }
 }
 console.log(cart)
+let count =1;
 
+
+let korzina = document.querySelector('.counter');
+korzina.innerHTML = localStorage.getItem('count');
 
 if (cartStorage.length) {
     for (el in cart) {

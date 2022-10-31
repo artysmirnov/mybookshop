@@ -136,7 +136,7 @@ const html = `<div class="helloitem">${htmlCatalog}</div>`;
 ROOT_PRODUCTS.innerHTML = html;
 
 const btnBuy = document.getElementById("buy")
-
+let count =1;
 console.log(btnBuy)
 
 if(btnBuy){

@@ -81,9 +81,13 @@ const GOODS = [
         "img": "https://ndc.book24.ru/resize/820x1180/iblock/9d6/9d6ea3a9f541ac1752afb670adc05767/d2a8ae0c340b3fde5d7347548f60eed6.jpg"
     }
 ]
-
 const currentPage = 1;
 const rows = 6;
+let count =1;
+
+
+let korzina = document.querySelector('.counter');
+korzina.innerHTML = localStorage.getItem('count');
 
 function displayList(arrData, rowPerPage, page) {
     const ROOT_PRODUCTS = document.getElementById('products');
@@ -120,9 +124,15 @@ function displayList(arrData, rowPerPage, page) {
 
 
         btn.addEventListener('click', () => {
+            if (localStorage.getItem('count') > count) {
+                count = localStorage.getItem("count)");
+            }
             const cartStorage = localStorage.getItem('cart') || '[]'
             const cart = JSON.parse(cartStorage)
             localStorage.setItem('cart', JSON.stringify([...cart, name.id]))
+            let korzina = document.querySelector('.counter');
+            localStorage.setItem('count',count++);
+            korzina.innerHTML = localStorage.getItem('count');
         })
         name.addEventListener('click',()=>
         {
@@ -170,6 +180,7 @@ console.log(link);
 
 
 displayPagination(GOODS, rows);
+
 
 
 

@@ -5,6 +5,10 @@
 head {
     background: #D2C790;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 body{
@@ -18,6 +22,11 @@ footer{
 
 .my_header {
     background: #D2C790;
+}
+.korzina{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .head_elements {
@@ -425,6 +434,7 @@ nav {
     width: 100%;
     text-align: center;
 }
+
 .burger span,
 .burger span:before,
 .burger span:after {
@@ -500,6 +510,13 @@ span.boo {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+.korzina > span{
+    text-decoration: none;
+    color: black;
+    background: green;
+    border-radius: 50%;
+font-size: 30px;
 }
 
 .a-header ul a {

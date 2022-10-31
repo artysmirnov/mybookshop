@@ -89,6 +89,9 @@ const ROOT_PRODUCTS = document.getElementById('item-page');
 
 console.log(GOODS[id])
 
+let korzina = document.querySelector('.counter');
+korzina.innerHTML = localStorage.getItem('count');
+
 let htmlCatalog = '';
 htmlCatalog += `
         <div class="item_page">
@@ -136,14 +139,20 @@ const html = `<div class="helloitem">${htmlCatalog}</div>`;
 ROOT_PRODUCTS.innerHTML = html;
 
 const btnBuy = document.getElementById("buy")
-let count =1;
+let count = 1;
 console.log(btnBuy)
 
-if(btnBuy){
-    btnBuy.addEventListener('click', ()=> {
+if (btnBuy) {
+    btnBuy.addEventListener('click', () => {
+        if (localStorage.getItem('count') > count) {
+            count = localStorage.getItem("count)");
+        }
         const cartStorage = localStorage.getItem('cart') || '[]'
         const cart = JSON.parse(cartStorage)
         localStorage.setItem('cart', JSON.stringify([...cart, btnBuy.className]))
+        let korzina = document.querySelector('.counter');
+        localStorage.setItem('count',count++);
+        korzina.innerHTML = localStorage.getItem('count');
         console.log(localStorage)
     });
 }

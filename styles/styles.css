@@ -148,10 +148,11 @@ footer {
 }
 
 .info {
+    font-size: 20px;
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    padding-top: 30px;
+    flex-flow:column;
+    align-items: flex-start;
+    padding-top: 20px;
 }
 
 .info > a {
@@ -161,25 +162,26 @@ footer {
 }
 
 .social_svg {
-    min-width: 40px;
-    max-width: 50px;
+    max-width: 20px;
 }
+
 
 .social {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    font-size: 20px;
 }
 
 .payment_svg {
-    min-width: 40px;
-    max-width: 50px;
+    max-width: 20px;
 }
 
 .payment {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    font-size: 20px;
 }
 
 .menu {
@@ -193,7 +195,6 @@ footer {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-
 }
 
 .middle {
@@ -517,6 +518,9 @@ span.boo {
     background: green;
     border-radius: 50%;
 font-size: 30px;
+}
+.contacts{
+    font-size: 20px;
 }
 
 .a-header ul a {

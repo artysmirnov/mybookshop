@@ -87,7 +87,6 @@ let count =1;
 
 
 let korzina = document.querySelector('.counter');
-korzina.innerHTML = localStorage.getItem('count');
 
 function displayList(arrData, rowPerPage, page) {
     const ROOT_PRODUCTS = document.getElementById('products');
@@ -124,14 +123,11 @@ function displayList(arrData, rowPerPage, page) {
 
 
         btn.addEventListener('click', () => {
-            if (localStorage.getItem('count') > count) {
-                count = localStorage.getItem("count)");
-            }
+
             const cartStorage = localStorage.getItem('cart') || '[]'
             const cart = JSON.parse(cartStorage)
             localStorage.setItem('cart', JSON.stringify([...cart, name.id]))
             let korzina = document.querySelector('.counter');
-            localStorage.setItem('count',count++);
             korzina.innerHTML = localStorage.getItem('count');
         })
         name.addEventListener('click',()=>

@@ -16,7 +16,7 @@ const GOODS = [
         "img1": "https://cdn.book24.ru/v2/ITD000000001287777/COVER/cover13d__w410.webp",
         "img2": "https://cdn.book24.ru/v2/ITD000000001287777/COVER/cover4__w410.webp",
         "img3": "https://cdn.book24.ru/v2/ITD000000001287777/COVER/cover3d__w410.webp",
-        "img": "https://ndc.book24.ru/resize/820x1192/iblock/5f7/5f7e85879836fdbfbbd60a1db68e7575/eedd8ea063e98afcd403217c5d65b731.jpg",
+        "img": "https://cdn.book24.ru/v2/ITD000000001287777/COVER/cover13d__w410.webp",
         "info": "Бессмертное творение одного из величайших немецких поэтов. Главный труд, который он писал почти всю свою жизнь. Легенда об ученом, который продал душу дьяволу в обмен на его обещание открыть секреты мироздания. Великая трагедия о цели человеческого бытия, о поиске смысла жизни. «Фауст» Гёте задает загадки, и уже не одно поколение читателей пытается их разгадать."
     },
     {
@@ -101,11 +101,9 @@ for (element in cartStorage) {
     }
 }
 console.log(cart)
-let count =1;
 
 
 let korzina = document.querySelector('.counter');
-korzina.innerHTML = localStorage.getItem('count');
 
 if (cartStorage.length) {
     for (el in cart) {

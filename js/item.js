@@ -89,7 +89,6 @@ const ROOT_PRODUCTS = document.getElementById('item-page');
 
 console.log(GOODS[id])
 
-let korzina = document.querySelector('.counter');
 
 let htmlCatalog = '';
 htmlCatalog += `
@@ -145,7 +144,6 @@ if (btnBuy) {
         const cartStorage = localStorage.getItem('cart') || '[]'
         const cart = JSON.parse(cartStorage)
         localStorage.setItem('cart', JSON.stringify([...cart, btnBuy.className]))
-        let korzina = document.querySelector('.counter');
         console.log(localStorage)
     });
 }

@@ -102,9 +102,6 @@ for (element in cartStorage) {
 }
 console.log(cart)
 
-
-let korzina = document.querySelector('.counter');
-
 if (cartStorage.length) {
     for (el in cart) {
         const id = el;

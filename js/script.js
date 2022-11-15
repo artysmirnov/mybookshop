@@ -86,8 +86,6 @@ const rows = 6;
 let count =1;
 
 
-let korzina = document.querySelector('.counter');
-
 function displayList(arrData, rowPerPage, page) {
     const ROOT_PRODUCTS = document.getElementById('products');
     ROOT_PRODUCTS.innerHTML = '';
@@ -127,7 +125,6 @@ function displayList(arrData, rowPerPage, page) {
             const cartStorage = localStorage.getItem('cart') || '[]'
             const cart = JSON.parse(cartStorage)
             localStorage.setItem('cart', JSON.stringify([...cart, name.id]))
-            let korzina = document.querySelector('.counter');
             korzina.innerHTML = localStorage.getItem('count');
         })
         name.addEventListener('click',()=>

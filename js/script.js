@@ -125,7 +125,6 @@ function displayList(arrData, rowPerPage, page) {
             const cartStorage = localStorage.getItem('cart') || '[]'
             const cart = JSON.parse(cartStorage)
             localStorage.setItem('cart', JSON.stringify([...cart, name.id]))
-            korzina.innerHTML = localStorage.getItem('count');
         })
         name.addEventListener('click',()=>
         {

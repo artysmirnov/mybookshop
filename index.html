@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/styles.css" type="text/css"/>
     <link type="image/x-icon" href="/images/favicon.svg" rel="shortcut icon">
     <link type="Image/x-icon" href="/images/favicon.svg" rel="icon">
-
 </head>
 <body>
 <div class="content">
@@ -31,7 +30,6 @@
                 <a href="html/registration.html"><img class="user_svg" src="images/user.svg" alt="user"></a>
                 <div class="korzina">
                     <a href="html/cart.html"><img class="cart_svg" src="images/cart.svg" alt="cart"></a>
-                    <span class="counter">0</span>
                 </div>
 
             </div>
@@ -86,8 +84,25 @@
 
         </div>
     </div>
-
+    <button class="openbot">bot</button>
     <a class="back_to_top" title="Наверх">↑</a>
+</div>
+
+
+<div class="chat">
+    <div class="chat-header">
+        <div class="title">Чатбот</div>
+        <div class="close"><a>X</a></div>
+    </div>
+    <div class="chat-body"></div>
+    <div class="chat-input">
+        <div class="input-sec">
+            <input type="text" id="txtInput" placeholder="Введите текст" autofocus />
+        </div>
+        <div class="send">
+            <img src="images/send.svg" alt="send" />
+        </div>
+    </div>
 </div>
 <footer>
     <div class="footer_items">
@@ -118,4 +133,7 @@
 </body>
 <script src="js/script.js"></script>
 <script src="js/return_top.js"></script>
+<script src="js/app.js"></script>
+<script src="js/response.js"></script>
+<script src="js/open_bot.js"></script>
 </html>

@@ -670,7 +670,10 @@ font-size: 30px;
     right: -15px;
 }
 .aktsii{
-    gap:10px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .sales_img > img{
     height: 200px;
